@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,87 @@
 		A1CD39AF2491D9D300E26A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CD39AD2491D9D300E26A3C /* Main.storyboard */; };
 		A1CD39B12491D9D500E26A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CD39B02491D9D500E26A3C /* Assets.xcassets */; };
 		A1CD39B42491D9D500E26A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CD39B22491D9D500E26A3C /* LaunchScreen.storyboard */; };
+		BAA490EE98D5DA7879D3C144 /* Pods_ABC5BasicClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074A95C4FC9B89FB9DA37FC0 /* Pods_ABC5BasicClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A1A36E362493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "COpenSSL::COpenSSL::Product";
+			remoteInfo = COpenSSL;
+		};
+		A1A36E382493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectHTTPServer::PerfectCHTTPParser::Product";
+			remoteInfo = PerfectCHTTPParser;
+		};
+		A1A36E3A2493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectCZlib::PerfectCZlib::Product";
+			remoteInfo = PerfectCZlib;
+		};
+		A1A36E3C2493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectCrypto::PerfectCrypto::Product";
+			remoteInfo = PerfectCrypto;
+		};
+		A1A36E3E2493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectHTTP::PerfectHTTP::Product";
+			remoteInfo = PerfectHTTP;
+		};
+		A1A36E402493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectHTTPServer::PerfectHTTPServer::Product";
+			remoteInfo = PerfectHTTPServer;
+		};
+		A1A36E422493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectLib::PerfectLib::Product";
+			remoteInfo = PerfectLib;
+		};
+		A1A36E442493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectNet::PerfectNet::Product";
+			remoteInfo = PerfectNet;
+		};
+		A1A36E462493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "ABC5BasicServer::PerfectTemplate::Product";
+			remoteInfo = PerfectTemplate;
+		};
+		A1A36E482493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectThread::PerfectThread::Product";
+			remoteInfo = PerfectThread;
+		};
+		A1A36E4A2493CF7700988659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PerfectWebSockets::PerfectWebSockets::Product";
+			remoteInfo = PerfectWebSockets;
+		};
 		A1CD39F72491E35900E26A3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
@@ -98,6 +176,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074A95C4FC9B89FB9DA37FC0 /* Pods_ABC5BasicClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABC5BasicClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0F5D545F83FA93E1B96758 /* Pods-ABC5BasicClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC5BasicClient.release.xcconfig"; path = "Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient.release.xcconfig"; sourceTree = "<group>"; };
+		3A75FC6342FEF74C38671C67 /* Pods-ABC5BasicClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC5BasicClient.debug.xcconfig"; path = "Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient.debug.xcconfig"; sourceTree = "<group>"; };
+		A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ABC5BasicServer.xcodeproj; path = ../../ABC5BasicServer/ABC5BasicServer.xcodeproj; sourceTree = "<group>"; };
 		A1CD39A02491D9D300E26A3C /* ABC5BasicClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABC5BasicClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CD39A32491D9D300E26A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1CD39A52491D9D300E26A3C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -116,18 +198,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA490EE98D5DA7879D3C144 /* Pods_ABC5BasicClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22082B7147B4B0F63950B858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				074A95C4FC9B89FB9DA37FC0 /* Pods_ABC5BasicClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1A36DFA2493CF7600988659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1A36E372493CF7700988659 /* COpenSSL.framework */,
+				A1A36E392493CF7700988659 /* PerfectCHTTPParser.framework */,
+				A1A36E3B2493CF7700988659 /* PerfectCZlib.framework */,
+				A1A36E3D2493CF7700988659 /* PerfectCrypto.framework */,
+				A1A36E3F2493CF7700988659 /* PerfectHTTP.framework */,
+				A1A36E412493CF7700988659 /* PerfectHTTPServer.framework */,
+				A1A36E432493CF7700988659 /* PerfectLib.framework */,
+				A1A36E452493CF7700988659 /* PerfectNet.framework */,
+				A1A36E472493CF7700988659 /* PerfectTemplate */,
+				A1A36E492493CF7700988659 /* PerfectThread.framework */,
+				A1A36E4B2493CF7700988659 /* PerfectWebSockets.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A1CD39972491D9D300E26A3C = {
 			isa = PBXGroup;
 			children = (
 				A1CD39A22491D9D300E26A3C /* ABC5BasicClient */,
 				A1CD39A12491D9D300E26A3C /* Products */,
 				A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */,
+				D325D040CBF6A59D69DE158F /* Pods */,
+				22082B7147B4B0F63950B858 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +259,7 @@
 				A1CD39A92491D9D300E26A3C /* GameScene.swift */,
 				A1CD39AB2491D9D300E26A3C /* GameViewController.swift */,
 				A1CD39AD2491D9D300E26A3C /* Main.storyboard */,
+				A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */,
 				A1CD39B02491D9D500E26A3C /* Assets.xcassets */,
 				A1CD39B22491D9D500E26A3C /* LaunchScreen.storyboard */,
 				A1CD39B52491D9D500E26A3C /* Info.plist */,
@@ -173,6 +285,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D325D040CBF6A59D69DE158F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A75FC6342FEF74C38671C67 /* Pods-ABC5BasicClient.debug.xcconfig */,
+				2E0F5D545F83FA93E1B96758 /* Pods-ABC5BasicClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1CD39B82491D9D500E26A3C /* Build configuration list for PBXNativeTarget "ABC5BasicClient" */;
 			buildPhases = (
+				5185B15849B8C3DA4718BC18 /* [CP] Check Pods Manifest.lock */,
 				A1CD399C2491D9D300E26A3C /* Sources */,
 				A1CD399D2491D9D300E26A3C /* Frameworks */,
 				A1CD399E2491D9D300E26A3C /* Resources */,
+				7E5F0497B77954BD04B8B4D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +344,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = A1A36DFA2493CF7600988659 /* Products */;
+					ProjectRef = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
+				},
+				{
 					ProductGroup = A1CD39BC2491E35900E26A3C /* Products */;
 					ProjectRef = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
 				},
@@ -233,6 +360,83 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		A1A36E372493CF7700988659 /* COpenSSL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = COpenSSL.framework;
+			remoteRef = A1A36E362493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E392493CF7700988659 /* PerfectCHTTPParser.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectCHTTPParser.framework;
+			remoteRef = A1A36E382493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E3B2493CF7700988659 /* PerfectCZlib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectCZlib.framework;
+			remoteRef = A1A36E3A2493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E3D2493CF7700988659 /* PerfectCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectCrypto.framework;
+			remoteRef = A1A36E3C2493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E3F2493CF7700988659 /* PerfectHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectHTTP.framework;
+			remoteRef = A1A36E3E2493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E412493CF7700988659 /* PerfectHTTPServer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectHTTPServer.framework;
+			remoteRef = A1A36E402493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E432493CF7700988659 /* PerfectLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectLib.framework;
+			remoteRef = A1A36E422493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E452493CF7700988659 /* PerfectNet.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectNet.framework;
+			remoteRef = A1A36E442493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E472493CF7700988659 /* PerfectTemplate */ = {
+			isa = PBXReferenceProxy;
+			fileType = text;
+			path = PerfectTemplate;
+			remoteRef = A1A36E462493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E492493CF7700988659 /* PerfectThread.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectThread.framework;
+			remoteRef = A1A36E482493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1A36E4B2493CF7700988659 /* PerfectWebSockets.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PerfectWebSockets.framework;
+			remoteRef = A1A36E4A2493CF7700988659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A1CD39F82491E35900E26A3C /* COpenSSL.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -326,6 +530,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5185B15849B8C3DA4718BC18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ABC5BasicClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E5F0497B77954BD04B8B4D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1CD399C2491D9D300E26A3C /* Sources */ = {
@@ -476,6 +722,7 @@
 		};
 		A1CD39B92491D9D500E26A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A75FC6342FEF74C38671C67 /* Pods-ABC5BasicClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +741,7 @@
 		};
 		A1CD39BA2491D9D500E26A3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0F5D545F83FA93E1B96758 /* Pods-ABC5BasicClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

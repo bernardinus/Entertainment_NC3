@@ -1,0 +1,6 @@
+framework module Pods_ABC5BasicClient {
+  umbrella header "Pods-ABC5BasicClient-umbrella.h"
+
+  export *
+  module * { export * }
+}
