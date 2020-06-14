@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AEE1C512496452800C10022 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEE1C502496452800C10022 /* JoinGameViewController.swift */; };
+		6AEE1C692496464700C10022 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEE1C682496464700C10022 /* LeaderboardViewController.swift */; };
+		6AF71C1B24952127007F4551 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF71C1A24952126007F4551 /* GameMode.swift */; };
+		6AF71C3324952D78007F4551 /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF71C3224952D78007F4551 /* HostViewController.swift */; };
 		A1CD39A42491D9D300E26A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD39A32491D9D300E26A3C /* AppDelegate.swift */; };
 		A1CD39A62491D9D300E26A3C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A1CD39A52491D9D300E26A3C /* GameScene.sks */; };
 		A1CD39A82491D9D300E26A3C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A1CD39A72491D9D300E26A3C /* Actions.sks */; };
@@ -179,6 +183,10 @@
 		074A95C4FC9B89FB9DA37FC0 /* Pods_ABC5BasicClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABC5BasicClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E0F5D545F83FA93E1B96758 /* Pods-ABC5BasicClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC5BasicClient.release.xcconfig"; path = "Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient.release.xcconfig"; sourceTree = "<group>"; };
 		3A75FC6342FEF74C38671C67 /* Pods-ABC5BasicClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC5BasicClient.debug.xcconfig"; path = "Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient.debug.xcconfig"; sourceTree = "<group>"; };
+		6AEE1C502496452800C10022 /* JoinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
+		6AEE1C682496464700C10022 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		6AF71C1A24952126007F4551 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		6AF71C3224952D78007F4551 /* HostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
 		A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ABC5BasicServer.xcodeproj; path = ../../ABC5BasicServer/ABC5BasicServer.xcodeproj; sourceTree = "<group>"; };
 		A1CD39A02491D9D300E26A3C /* ABC5BasicClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABC5BasicClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CD39A32491D9D300E26A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -259,10 +267,14 @@
 				A1CD39A92491D9D300E26A3C /* GameScene.swift */,
 				A1CD39AB2491D9D300E26A3C /* GameViewController.swift */,
 				A1CD39AD2491D9D300E26A3C /* Main.storyboard */,
+				6AF71C1A24952126007F4551 /* GameMode.swift */,
 				A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */,
 				A1CD39B02491D9D500E26A3C /* Assets.xcassets */,
 				A1CD39B22491D9D500E26A3C /* LaunchScreen.storyboard */,
 				A1CD39B52491D9D500E26A3C /* Info.plist */,
+				6AF71C3224952D78007F4551 /* HostViewController.swift */,
+				6AEE1C502496452800C10022 /* JoinGameViewController.swift */,
+				6AEE1C682496464700C10022 /* LeaderboardViewController.swift */,
 			);
 			path = ABC5BasicClient;
 			sourceTree = "<group>";
@@ -578,8 +590,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEE1C692496464700C10022 /* LeaderboardViewController.swift in Sources */,
+				6AF71C1B24952127007F4551 /* GameMode.swift in Sources */,
+				6AF71C3324952D78007F4551 /* HostViewController.swift in Sources */,
 				A1CD39AA2491D9D300E26A3C /* GameScene.swift in Sources */,
 				A1CD39AC2491D9D300E26A3C /* GameViewController.swift in Sources */,
+				6AEE1C512496452800C10022 /* JoinGameViewController.swift in Sources */,
 				A1CD39A42491D9D300E26A3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,7 +742,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7D734D7EN3;
+				DEVELOPMENT_TEAM = 5Z8NF8RRMK;
 				INFOPLIST_FILE = ABC5BasicClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -745,7 +761,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7D734D7EN3;
+				DEVELOPMENT_TEAM = 5Z8NF8RRMK;
 				INFOPLIST_FILE = ABC5BasicClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
