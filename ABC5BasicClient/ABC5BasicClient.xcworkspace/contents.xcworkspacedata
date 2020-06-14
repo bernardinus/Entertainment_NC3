@@ -5,9 +5,9 @@
       location = "group:ABC5BasicClient.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:ABC5BasicClient/../../ABC5BasicServer/ABC5BasicServer.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ABC5BasicClient/../../ABC5BasicServer/ABC5BasicServer.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

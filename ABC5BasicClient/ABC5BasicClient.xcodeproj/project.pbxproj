@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A19C89EF24950D7600C23F3A /* Gameplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C89EE24950D7600C23F3A /* Gameplay.storyboard */; };
+		A19C89F124950D8700C23F3A /* AnswerResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C89F024950D8700C23F3A /* AnswerResult.storyboard */; };
+		A19C89F324950D9C00C23F3A /* ChangeSkillCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C89F224950D9C00C23F3A /* ChangeSkillCard.storyboard */; };
+		A19C89F524950DB300C23F3A /* GameResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C89F424950DB300C23F3A /* GameResult.storyboard */; };
+		A19C89FE2495D1C700C23F3A /* GameplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C89FD2495D1C700C23F3A /* GameplayVC.swift */; };
+		A19C8A002495D1D400C23F3A /* AnswerResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C89FF2495D1D400C23F3A /* AnswerResultVC.swift */; };
+		A19C8A022495D1ED00C23F3A /* ChangeSkillCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C8A012495D1ED00C23F3A /* ChangeSkillCardVC.swift */; };
+		A19C8A042495D1F900C23F3A /* GameResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C8A032495D1F900C23F3A /* GameResultVC.swift */; };
 		A1CD39A42491D9D300E26A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD39A32491D9D300E26A3C /* AppDelegate.swift */; };
 		A1CD39A62491D9D300E26A3C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A1CD39A52491D9D300E26A3C /* GameScene.sks */; };
 		A1CD39A82491D9D300E26A3C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A1CD39A72491D9D300E26A3C /* Actions.sks */; };
@@ -18,168 +26,18 @@
 		BAA490EE98D5DA7879D3C144 /* Pods_ABC5BasicClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074A95C4FC9B89FB9DA37FC0 /* Pods_ABC5BasicClient.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A1A36E362493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "COpenSSL::COpenSSL::Product";
-			remoteInfo = COpenSSL;
-		};
-		A1A36E382493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectHTTPServer::PerfectCHTTPParser::Product";
-			remoteInfo = PerfectCHTTPParser;
-		};
-		A1A36E3A2493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectCZlib::PerfectCZlib::Product";
-			remoteInfo = PerfectCZlib;
-		};
-		A1A36E3C2493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectCrypto::PerfectCrypto::Product";
-			remoteInfo = PerfectCrypto;
-		};
-		A1A36E3E2493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectHTTP::PerfectHTTP::Product";
-			remoteInfo = PerfectHTTP;
-		};
-		A1A36E402493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectHTTPServer::PerfectHTTPServer::Product";
-			remoteInfo = PerfectHTTPServer;
-		};
-		A1A36E422493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectLib::PerfectLib::Product";
-			remoteInfo = PerfectLib;
-		};
-		A1A36E442493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectNet::PerfectNet::Product";
-			remoteInfo = PerfectNet;
-		};
-		A1A36E462493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "ABC5BasicServer::PerfectTemplate::Product";
-			remoteInfo = PerfectTemplate;
-		};
-		A1A36E482493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectThread::PerfectThread::Product";
-			remoteInfo = PerfectThread;
-		};
-		A1A36E4A2493CF7700988659 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectWebSockets::PerfectWebSockets::Product";
-			remoteInfo = PerfectWebSockets;
-		};
-		A1CD39F72491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "COpenSSL::COpenSSL::Product";
-			remoteInfo = COpenSSL;
-		};
-		A1CD39F92491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectHTTPServer::PerfectCHTTPParser::Product";
-			remoteInfo = PerfectCHTTPParser;
-		};
-		A1CD39FB2491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectCZlib::PerfectCZlib::Product";
-			remoteInfo = PerfectCZlib;
-		};
-		A1CD39FD2491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectCrypto::PerfectCrypto::Product";
-			remoteInfo = PerfectCrypto;
-		};
-		A1CD39FF2491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectHTTP::PerfectHTTP::Product";
-			remoteInfo = PerfectHTTP;
-		};
-		A1CD3A012491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectHTTPServer::PerfectHTTPServer::Product";
-			remoteInfo = PerfectHTTPServer;
-		};
-		A1CD3A032491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectLib::PerfectLib::Product";
-			remoteInfo = PerfectLib;
-		};
-		A1CD3A052491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectNet::PerfectNet::Product";
-			remoteInfo = PerfectNet;
-		};
-		A1CD3A072491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectTemplate::PerfectTemplate::Product";
-			remoteInfo = PerfectTemplate;
-		};
-		A1CD3A092491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectThread::PerfectThread::Product";
-			remoteInfo = PerfectThread;
-		};
-		A1CD3A0B2491E35900E26A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "PerfectWebSockets::PerfectWebSockets::Product";
-			remoteInfo = PerfectWebSockets;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		074A95C4FC9B89FB9DA37FC0 /* Pods_ABC5BasicClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABC5BasicClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E0F5D545F83FA93E1B96758 /* Pods-ABC5BasicClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC5BasicClient.release.xcconfig"; path = "Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient.release.xcconfig"; sourceTree = "<group>"; };
 		3A75FC6342FEF74C38671C67 /* Pods-ABC5BasicClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC5BasicClient.debug.xcconfig"; path = "Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient.debug.xcconfig"; sourceTree = "<group>"; };
-		A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ABC5BasicServer.xcodeproj; path = ../../ABC5BasicServer/ABC5BasicServer.xcodeproj; sourceTree = "<group>"; };
+		A19C89EE24950D7600C23F3A /* Gameplay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gameplay.storyboard; sourceTree = "<group>"; };
+		A19C89F024950D8700C23F3A /* AnswerResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnswerResult.storyboard; sourceTree = "<group>"; };
+		A19C89F224950D9C00C23F3A /* ChangeSkillCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeSkillCard.storyboard; sourceTree = "<group>"; };
+		A19C89F424950DB300C23F3A /* GameResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameResult.storyboard; sourceTree = "<group>"; };
+		A19C89FD2495D1C700C23F3A /* GameplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayVC.swift; sourceTree = "<group>"; };
+		A19C89FF2495D1D400C23F3A /* AnswerResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerResultVC.swift; sourceTree = "<group>"; };
+		A19C8A012495D1ED00C23F3A /* ChangeSkillCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSkillCardVC.swift; sourceTree = "<group>"; };
+		A19C8A032495D1F900C23F3A /* GameResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultVC.swift; sourceTree = "<group>"; };
 		A1CD39A02491D9D300E26A3C /* ABC5BasicClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABC5BasicClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CD39A32491D9D300E26A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1CD39A52491D9D300E26A3C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -190,7 +48,6 @@
 		A1CD39B02491D9D500E26A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CD39B32491D9D500E26A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1CD39B52491D9D500E26A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PerfectTemplate.xcodeproj; path = ../ABC5BasicServer/PerfectTemplate.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,30 +70,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A1A36DFA2493CF7600988659 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A1A36E372493CF7700988659 /* COpenSSL.framework */,
-				A1A36E392493CF7700988659 /* PerfectCHTTPParser.framework */,
-				A1A36E3B2493CF7700988659 /* PerfectCZlib.framework */,
-				A1A36E3D2493CF7700988659 /* PerfectCrypto.framework */,
-				A1A36E3F2493CF7700988659 /* PerfectHTTP.framework */,
-				A1A36E412493CF7700988659 /* PerfectHTTPServer.framework */,
-				A1A36E432493CF7700988659 /* PerfectLib.framework */,
-				A1A36E452493CF7700988659 /* PerfectNet.framework */,
-				A1A36E472493CF7700988659 /* PerfectTemplate */,
-				A1A36E492493CF7700988659 /* PerfectThread.framework */,
-				A1A36E4B2493CF7700988659 /* PerfectWebSockets.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A1CD39972491D9D300E26A3C = {
 			isa = PBXGroup;
 			children = (
 				A1CD39A22491D9D300E26A3C /* ABC5BasicClient */,
 				A1CD39A12491D9D300E26A3C /* Products */,
-				A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */,
 				D325D040CBF6A59D69DE158F /* Pods */,
 				22082B7147B4B0F63950B858 /* Frameworks */,
 			);
@@ -259,30 +97,19 @@
 				A1CD39A92491D9D300E26A3C /* GameScene.swift */,
 				A1CD39AB2491D9D300E26A3C /* GameViewController.swift */,
 				A1CD39AD2491D9D300E26A3C /* Main.storyboard */,
-				A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */,
+				A19C89EE24950D7600C23F3A /* Gameplay.storyboard */,
+				A19C89FD2495D1C700C23F3A /* GameplayVC.swift */,
+				A19C89F024950D8700C23F3A /* AnswerResult.storyboard */,
+				A19C89FF2495D1D400C23F3A /* AnswerResultVC.swift */,
+				A19C89F224950D9C00C23F3A /* ChangeSkillCard.storyboard */,
+				A19C8A012495D1ED00C23F3A /* ChangeSkillCardVC.swift */,
+				A19C89F424950DB300C23F3A /* GameResult.storyboard */,
+				A19C8A032495D1F900C23F3A /* GameResultVC.swift */,
 				A1CD39B02491D9D500E26A3C /* Assets.xcassets */,
 				A1CD39B22491D9D500E26A3C /* LaunchScreen.storyboard */,
 				A1CD39B52491D9D500E26A3C /* Info.plist */,
 			);
 			path = ABC5BasicClient;
-			sourceTree = "<group>";
-		};
-		A1CD39BC2491E35900E26A3C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A1CD39F82491E35900E26A3C /* COpenSSL.framework */,
-				A1CD39FA2491E35900E26A3C /* PerfectCHTTPParser.framework */,
-				A1CD39FC2491E35900E26A3C /* PerfectCZlib.framework */,
-				A1CD39FE2491E35900E26A3C /* PerfectCrypto.framework */,
-				A1CD3A002491E35900E26A3C /* PerfectHTTP.framework */,
-				A1CD3A022491E35900E26A3C /* PerfectHTTPServer.framework */,
-				A1CD3A042491E35900E26A3C /* PerfectLib.framework */,
-				A1CD3A062491E35900E26A3C /* PerfectNet.framework */,
-				A1CD3A082491E35900E26A3C /* PerfectTemplate */,
-				A1CD3A0A2491E35900E26A3C /* PerfectThread.framework */,
-				A1CD3A0C2491E35900E26A3C /* PerfectWebSockets.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D325D040CBF6A59D69DE158F /* Pods */ = {
@@ -342,16 +169,6 @@
 			mainGroup = A1CD39972491D9D300E26A3C;
 			productRefGroup = A1CD39A12491D9D300E26A3C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A1A36DFA2493CF7600988659 /* Products */;
-					ProjectRef = A1A36DF92493CF7600988659 /* ABC5BasicServer.xcodeproj */;
-				},
-				{
-					ProductGroup = A1CD39BC2491E35900E26A3C /* Products */;
-					ProjectRef = A1CD39BB2491E35900E26A3C /* PerfectTemplate.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A1CD399F2491D9D300E26A3C /* ABC5BasicClient */,
@@ -359,169 +176,16 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		A1A36E372493CF7700988659 /* COpenSSL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = COpenSSL.framework;
-			remoteRef = A1A36E362493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E392493CF7700988659 /* PerfectCHTTPParser.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectCHTTPParser.framework;
-			remoteRef = A1A36E382493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E3B2493CF7700988659 /* PerfectCZlib.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectCZlib.framework;
-			remoteRef = A1A36E3A2493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E3D2493CF7700988659 /* PerfectCrypto.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectCrypto.framework;
-			remoteRef = A1A36E3C2493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E3F2493CF7700988659 /* PerfectHTTP.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectHTTP.framework;
-			remoteRef = A1A36E3E2493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E412493CF7700988659 /* PerfectHTTPServer.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectHTTPServer.framework;
-			remoteRef = A1A36E402493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E432493CF7700988659 /* PerfectLib.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectLib.framework;
-			remoteRef = A1A36E422493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E452493CF7700988659 /* PerfectNet.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectNet.framework;
-			remoteRef = A1A36E442493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E472493CF7700988659 /* PerfectTemplate */ = {
-			isa = PBXReferenceProxy;
-			fileType = text;
-			path = PerfectTemplate;
-			remoteRef = A1A36E462493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E492493CF7700988659 /* PerfectThread.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectThread.framework;
-			remoteRef = A1A36E482493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1A36E4B2493CF7700988659 /* PerfectWebSockets.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectWebSockets.framework;
-			remoteRef = A1A36E4A2493CF7700988659 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD39F82491E35900E26A3C /* COpenSSL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = COpenSSL.framework;
-			remoteRef = A1CD39F72491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD39FA2491E35900E26A3C /* PerfectCHTTPParser.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectCHTTPParser.framework;
-			remoteRef = A1CD39F92491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD39FC2491E35900E26A3C /* PerfectCZlib.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectCZlib.framework;
-			remoteRef = A1CD39FB2491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD39FE2491E35900E26A3C /* PerfectCrypto.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectCrypto.framework;
-			remoteRef = A1CD39FD2491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD3A002491E35900E26A3C /* PerfectHTTP.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectHTTP.framework;
-			remoteRef = A1CD39FF2491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD3A022491E35900E26A3C /* PerfectHTTPServer.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectHTTPServer.framework;
-			remoteRef = A1CD3A012491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD3A042491E35900E26A3C /* PerfectLib.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectLib.framework;
-			remoteRef = A1CD3A032491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD3A062491E35900E26A3C /* PerfectNet.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectNet.framework;
-			remoteRef = A1CD3A052491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD3A082491E35900E26A3C /* PerfectTemplate */ = {
-			isa = PBXReferenceProxy;
-			fileType = text;
-			path = PerfectTemplate;
-			remoteRef = A1CD3A072491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD3A0A2491E35900E26A3C /* PerfectThread.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectThread.framework;
-			remoteRef = A1CD3A092491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1CD3A0C2491E35900E26A3C /* PerfectWebSockets.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PerfectWebSockets.framework;
-			remoteRef = A1CD3A0B2491E35900E26A3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		A1CD399E2491D9D300E26A3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19C89F324950D9C00C23F3A /* ChangeSkillCard.storyboard in Resources */,
+				A19C89EF24950D7600C23F3A /* Gameplay.storyboard in Resources */,
+				A19C89F524950DB300C23F3A /* GameResult.storyboard in Resources */,
 				A1CD39AF2491D9D300E26A3C /* Main.storyboard in Resources */,
+				A19C89F124950D8700C23F3A /* AnswerResult.storyboard in Resources */,
 				A1CD39A62491D9D300E26A3C /* GameScene.sks in Resources */,
 				A1CD39B12491D9D500E26A3C /* Assets.xcassets in Resources */,
 				A1CD39B42491D9D500E26A3C /* LaunchScreen.storyboard in Resources */,
@@ -578,9 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19C8A022495D1ED00C23F3A /* ChangeSkillCardVC.swift in Sources */,
 				A1CD39AA2491D9D300E26A3C /* GameScene.swift in Sources */,
 				A1CD39AC2491D9D300E26A3C /* GameViewController.swift in Sources */,
+				A19C89FE2495D1C700C23F3A /* GameplayVC.swift in Sources */,
+				A19C8A042495D1F900C23F3A /* GameResultVC.swift in Sources */,
 				A1CD39A42491D9D300E26A3C /* AppDelegate.swift in Sources */,
+				A19C8A002495D1D400C23F3A /* AnswerResultVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
