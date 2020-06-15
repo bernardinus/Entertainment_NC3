@@ -8,8 +8,9 @@
 
 import UIKit
 
-class JoinGameViewController: UIViewController {
+class JoinGameViewController: UIViewController{
     
+    @IBOutlet weak var roomidField: UITextField!
     
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var avatar2: UIImageView!
@@ -20,8 +21,28 @@ class JoinGameViewController: UIViewController {
     @IBOutlet weak var avatar7: UIImageView!
     @IBOutlet weak var avatar8: UIImageView!
     
+    
+    
+    
     override func viewDidLoad() {
+        
+        
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+
+            view.addGestureRecognizer(tap)
+        }
+
+        //Calls this function when the tap is recognized.
+        @objc func dismissKeyboard() {
+            //Causes the view (or one of its embedded text fields) to resign the first responder status.
+            view.endEditing(true)
+        
         super.viewDidLoad()
+        
+            
+        
+        
         
         avatarImage.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         avatarImage.layer.borderWidth = 1
@@ -51,22 +72,9 @@ class JoinGameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+ 
     
-    //    view.frame.contains(point)
-    //
-    //    let point = touches.first?.location(in: self.view)
     
-    //  point = titik
-    //  terus detect apakah titik itu dalam frame
-    //  jika titik itu sudah dalam frame maka border dapat berubah
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-
-        let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
-        let compSepByCharInSet = string.components(separatedBy: aSet)
-        let numberFiltered = compSepByCharInSet.joined(separator: "")
-        return string == numberFiltered
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
@@ -91,58 +99,58 @@ class JoinGameViewController: UIViewController {
         }
         
         if avatar3.frame.contains(point)
-               {
-                   // touch inside
-                   avatar3.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-               }
-               else {
-                   avatar3.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-               }
+        {
+            // touch inside
+            avatar3.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        }
+        else {
+            avatar3.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
         
         if avatar4.frame.contains(point)
-               {
-                   // touch inside
-                   avatar4.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-               }
-               else {
-                   avatar4.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-               }
+        {
+            // touch inside
+            avatar4.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        }
+        else {
+            avatar4.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
         
         if avatar5.frame.contains(point)
-               {
-                   // touch inside
-                   avatar5.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-               }
-               else {
-                   avatar5.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-               }
+        {
+            // touch inside
+            avatar5.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        }
+        else {
+            avatar5.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
         
         if avatar6.frame.contains(point)
-               {
-                   // touch inside
-                   avatar6.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-               }
-               else {
-                   avatar6.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-               }
+        {
+            // touch inside
+            avatar6.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        }
+        else {
+            avatar6.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
         
         if avatar7.frame.contains(point)
-               {
-                   // touch inside
-                   avatar7.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-               }
-               else {
-                   avatar7.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-               }
+        {
+            // touch inside
+            avatar7.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        }
+        else {
+            avatar7.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
         
         if avatar8.frame.contains(point)
-               {
-                   // touch inside
-                   avatar8.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-               }
-               else {
-                   avatar8.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-               }
+        {
+            // touch inside
+            avatar8.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        }
+        else {
+            avatar8.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
         
         
     }
