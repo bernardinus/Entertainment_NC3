@@ -17,15 +17,15 @@ class HostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        var fourDigitNumber: String {
-//         var result = ""
-//         repeat {
-//             result = String(format:"%04d", arc4random_uniform(10000) )
-//         } while Set<Character>(result.characters).count < 4
-//         return result
-//        }
-
-        // Do any additional setup after loading the view.
+////        var fourDigitNumber: String {
+////         var result = ""
+////         repeat {
+////             result = String(format:"%04d", arc4random_uniform(10000) )
+////         } while Set<Character>(result.characters).count < 4
+////         return result
+////        }
+//
+//        // Do any additional setup after loading the view.
     }
     
 
@@ -40,3 +40,4 @@ class HostViewController: UIViewController {
     */
 
 }
+

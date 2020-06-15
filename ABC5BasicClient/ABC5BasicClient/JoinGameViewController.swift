@@ -10,8 +10,16 @@ import UIKit
 
 class JoinGameViewController: UIViewController {
 
+    @IBOutlet weak var avatarImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+     touchesBegan(<#T##touches: Set<UITouch>##Set<UITouch>#>, with: <#T##UIEvent?#>)
+        
+        if !isTouched {
+            <#code#>
+        }
 
         // Do any additional setup after loading the view.
     }
