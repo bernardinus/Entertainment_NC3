@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BCA738E02497164B00BB0A71 /* set.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA738DF2497164B00BB0A71 /* set.swift */; };
+		BCA739052497A52100BB0A71 /* AbilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA739042497A52100BB0A71 /* AbilityViewController.swift */; };
+		BCA7390A2497A94F00BB0A71 /* AbilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA739082497A94F00BB0A71 /* AbilityTableViewCell.swift */; };
+		BCA7390B2497A94F00BB0A71 /* AbilityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA739092497A94F00BB0A71 /* AbilityTableViewCell.xib */; };
 		BCF8213C24967FED00F8B193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8213B24967FED00F8B193 /* AppDelegate.swift */; };
 		BCF8213E24967FED00F8B193 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8213D24967FED00F8B193 /* SceneDelegate.swift */; };
 		BCF8214024967FED00F8B193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8213F24967FED00F8B193 /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		BCA738DF2497164B00BB0A71 /* set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = set.swift; sourceTree = "<group>"; };
+		BCA739042497A52100BB0A71 /* AbilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityViewController.swift; sourceTree = "<group>"; };
+		BCA739082497A94F00BB0A71 /* AbilityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityTableViewCell.swift; sourceTree = "<group>"; };
+		BCA739092497A94F00BB0A71 /* AbilityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AbilityTableViewCell.xib; sourceTree = "<group>"; };
 		BCF8213824967FED00F8B193 /* ABC5besic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABC5besic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF8213B24967FED00F8B193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCF8213D24967FED00F8B193 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,13 +58,16 @@
 		BCF8212F24967FED00F8B193 = {
 			isa = PBXGroup;
 			children = (
-				BCA738DF2497164B00BB0A71 /* set.swift */,
+				BCA739082497A94F00BB0A71 /* AbilityTableViewCell.swift */,
+				BCA739092497A94F00BB0A71 /* AbilityTableViewCell.xib */,
 				BCF8213A24967FED00F8B193 /* ABC5besic */,
 				BCF8213924967FED00F8B193 /* Products */,
 				BCF821522496803000F8B193 /* GameSettingViewController.swift */,
 				BCF821532496803100F8B193 /* HomePageViewController.swift */,
 				BCF821542496803100F8B193 /* SettingViewController.swift */,
 				BCF821582497105A00F8B193 /* game music.mp3 */,
+				BCA739042497A52100BB0A71 /* AbilityViewController.swift */,
+				BCA738DF2497164B00BB0A71 /* set.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF8214B24967FEF00F8B193 /* LaunchScreen.storyboard in Resources */,
+				BCA7390B2497A94F00BB0A71 /* AbilityTableViewCell.xib in Resources */,
 				BCF8214824967FEF00F8B193 /* Assets.xcassets in Resources */,
 				BCF8214324967FED00F8B193 /* Main.storyboard in Resources */,
 				BCF821592497105A00F8B193 /* game music.mp3 in Resources */,
@@ -157,10 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA7390A2497A94F00BB0A71 /* AbilityTableViewCell.swift in Sources */,
 				BCF8214024967FED00F8B193 /* ViewController.swift in Sources */,
 				BCF8213C24967FED00F8B193 /* AppDelegate.swift in Sources */,
 				BCF821562496803100F8B193 /* HomePageViewController.swift in Sources */,
 				BCF821552496803100F8B193 /* GameSettingViewController.swift in Sources */,
+				BCA739052497A52100BB0A71 /* AbilityViewController.swift in Sources */,
 				BCF8213E24967FED00F8B193 /* SceneDelegate.swift in Sources */,
 				BCA738E02497164B00BB0A71 /* set.swift in Sources */,
 				BCF821572496803100F8B193 /* SettingViewController.swift in Sources */,
