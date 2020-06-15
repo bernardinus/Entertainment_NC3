@@ -14,18 +14,21 @@ class HostViewController: UIViewController {
     
     @IBOutlet weak var roomID: UILabel!
     
+    func random() -> String {
+        var result = ""
+        repeat {
+            result = String(format:"%04d", arc4random_uniform(10000) )
+        } while result.count < 4 || Int(result)! < 1000
+        print(result)
+        return result
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-////        var fourDigitNumber: String {
-////         var result = ""
-////         repeat {
-////             result = String(format:"%04d", arc4random_uniform(10000) )
-////         } while Set<Character>(result.characters).count < 4
-////         return result
-////        }
-//
-//        // Do any additional setup after loading the view.
+    //roomID = random()
+
+    
     }
     
 
