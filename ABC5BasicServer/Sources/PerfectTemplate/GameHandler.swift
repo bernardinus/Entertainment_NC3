@@ -13,7 +13,7 @@ class GameHandler: WebSocketSessionHandler {
     // The name of the super-protocol we implement.
     // This is optional, but it should match whatever the client-side WebSocket is initialized with.
     
-    let socketProtocol: String? = "tictactoe"
+    let socketProtocol: String? = "abcbasic"
     
     // This function is called by the WebSocketHandler once the connection has been established.
     func handleSession(request: HTTPRequest, socket: WebSocket) {
@@ -28,7 +28,8 @@ class GameHandler: WebSocketSessionHandler {
             // By default there is no timeout.
             guard let string = string else {
                 // This block will be executed if, for example, the game was closed.
-                if let player = Game.shared.playerForSocket(socket) {
+                if let player = Game.shared.playerForSocket(socket)
+                {
                     print("socket closed for \(player.id)")
                     
                     do {
@@ -56,11 +57,11 @@ class GameHandler: WebSocketSessionHandler {
                     
                     try Game.shared.handleJoin(player: player, socket: socket)
                 case .turn:
-                    guard let board = message.board else {
-                        return print("board not provided")
+                    guard let answer = message.answer else {
+                        return print("answer not provided")
                     }
                     
-                    try Game.shared.handleTurn(board)
+                    try Game.shared.handleTurn(answer)
                 default:
                     break
                 }

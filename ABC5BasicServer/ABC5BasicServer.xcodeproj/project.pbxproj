@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A104AE722496D21F00B0A0FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE5B2496C82000B0A0FC /* Data.swift */; };
+		A104AE732496D21F00B0A0FC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE5E2496CC1400B0A0FC /* Message.swift */; };
+		A104AE742496D21F00B0A0FC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE602496CC2D00B0A0FC /* Player.swift */; };
 		A19C89FB2495B81200C23F3A /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C89F72495A77B00C23F3A /* GameHandler.swift */; };
 		A19C89FC2495B81900C23F3A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C89F92495A7B900C23F3A /* Game.swift */; };
 		OBJ_387 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -640,6 +643,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A104AE5B2496C82000B0A0FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A104AE5E2496CC1400B0A0FC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A104AE602496CC2D00B0A0FC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A19C89F72495A77B00C23F3A /* GameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHandler.swift; sourceTree = "<group>"; };
 		A19C89F92495A7B900C23F3A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		"ABC5BasicServer::PerfectTemplate::Product" /* PerfectTemplate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = PerfectTemplate; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1105,6 +1111,9 @@
 		A1A36E4D2493D3F900988659 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A104AE5B2496C82000B0A0FC /* Data.swift */,
+				A104AE5E2496CC1400B0A0FC /* Message.swift */,
+				A104AE602496CC2D00B0A0FC /* Player.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -2532,7 +2541,10 @@
 			files = (
 				A19C89FB2495B81200C23F3A /* GameHandler.swift in Sources */,
 				A19C89FC2495B81900C23F3A /* Game.swift in Sources */,
+				A104AE732496D21F00B0A0FC /* Message.swift in Sources */,
 				OBJ_824 /* main.swift in Sources */,
+				A104AE742496D21F00B0A0FC /* Player.swift in Sources */,
+				A104AE722496D21F00B0A0FC /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

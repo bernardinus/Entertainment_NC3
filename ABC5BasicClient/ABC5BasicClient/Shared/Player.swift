@@ -1,0 +1,39 @@
+//
+//  Player.swift
+//  ABC5BasicClient
+//
+//  Created by Bernardinus on 15/06/20.
+//  Copyright © 2020 ADA. All rights reserved.
+//
+
+import Foundation
+
+public enum PlayerError: Error {
+    case creationFailed
+}
+
+public class Player: Hashable, Codable {
+    public let id: String
+    
+    public init() {
+        self.id = NSUUID().uuidString
+    }
+        
+    public init(json: [String: Any]) throws {
+        guard let id = json["id"] as? String else {
+            throw PlayerError.creationFailed
+        }
+        
+        self.id = id
+    }
+    
+    // MARK: - Hashable
+    
+    public var hashValue: Int {
+        return self.id.hashValue
+    }
+    
+    public static func == (lhs: Player, rhs: Player) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

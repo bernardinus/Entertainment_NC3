@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A104AE642496CC6900B0A0FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE632496CC6900B0A0FC /* Data.swift */; };
+		A104AE662496CC6D00B0A0FC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE652496CC6D00B0A0FC /* Message.swift */; };
+		A104AE682496CC7400B0A0FC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE672496CC7400B0A0FC /* Player.swift */; };
+		A104AE6B2496CC8E00B0A0FC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE6A2496CC8E00B0A0FC /* DataManager.swift */; };
+		A104AE6D2496CC9900B0A0FC /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE6C2496CC9900B0A0FC /* GameManager.swift */; };
+		A104AE6F2496CF8600B0A0FC /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE6E2496CF8600B0A0FC /* GameState.swift */; };
+		A104AE712496CFAE00B0A0FC /* ABCClientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104AE702496CFAE00B0A0FC /* ABCClientHandler.swift */; };
 		A19C89EF24950D7600C23F3A /* Gameplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C89EE24950D7600C23F3A /* Gameplay.storyboard */; };
 		A19C89F124950D8700C23F3A /* AnswerResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C89F024950D8700C23F3A /* AnswerResult.storyboard */; };
 		A19C89F324950D9C00C23F3A /* ChangeSkillCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C89F224950D9C00C23F3A /* ChangeSkillCard.storyboard */; };
@@ -30,6 +37,13 @@
 		074A95C4FC9B89FB9DA37FC0 /* Pods_ABC5BasicClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABC5BasicClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E0F5D545F83FA93E1B96758 /* Pods-ABC5BasicClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC5BasicClient.release.xcconfig"; path = "Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient.release.xcconfig"; sourceTree = "<group>"; };
 		3A75FC6342FEF74C38671C67 /* Pods-ABC5BasicClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC5BasicClient.debug.xcconfig"; path = "Target Support Files/Pods-ABC5BasicClient/Pods-ABC5BasicClient.debug.xcconfig"; sourceTree = "<group>"; };
+		A104AE632496CC6900B0A0FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A104AE652496CC6D00B0A0FC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A104AE672496CC7400B0A0FC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A104AE6A2496CC8E00B0A0FC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A104AE6C2496CC9900B0A0FC /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		A104AE6E2496CF8600B0A0FC /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		A104AE702496CFAE00B0A0FC /* ABCClientHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCClientHandler.swift; sourceTree = "<group>"; };
 		A19C89EE24950D7600C23F3A /* Gameplay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gameplay.storyboard; sourceTree = "<group>"; };
 		A19C89F024950D8700C23F3A /* AnswerResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnswerResult.storyboard; sourceTree = "<group>"; };
 		A19C89F224950D9C00C23F3A /* ChangeSkillCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeSkillCard.storyboard; sourceTree = "<group>"; };
@@ -70,6 +84,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A104AE622496CC5C00B0A0FC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A104AE632496CC6900B0A0FC /* Data.swift */,
+				A104AE652496CC6D00B0A0FC /* Message.swift */,
+				A104AE672496CC7400B0A0FC /* Player.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A104AE692496CC8600B0A0FC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A104AE6A2496CC8E00B0A0FC /* DataManager.swift */,
+				A104AE6C2496CC9900B0A0FC /* GameManager.swift */,
+				A104AE6E2496CF8600B0A0FC /* GameState.swift */,
+				A104AE702496CFAE00B0A0FC /* ABCClientHandler.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		A1CD39972491D9D300E26A3C = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +143,8 @@
 				A1CD39B02491D9D500E26A3C /* Assets.xcassets */,
 				A1CD39B22491D9D500E26A3C /* LaunchScreen.storyboard */,
 				A1CD39B52491D9D500E26A3C /* Info.plist */,
+				A104AE692496CC8600B0A0FC /* Manager */,
+				A104AE622496CC5C00B0A0FC /* Shared */,
 			);
 			path = ABC5BasicClient;
 			sourceTree = "<group>";
@@ -243,12 +280,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19C8A022495D1ED00C23F3A /* ChangeSkillCardVC.swift in Sources */,
+				A104AE712496CFAE00B0A0FC /* ABCClientHandler.swift in Sources */,
+				A104AE6D2496CC9900B0A0FC /* GameManager.swift in Sources */,
+				A104AE6F2496CF8600B0A0FC /* GameState.swift in Sources */,
 				A1CD39AA2491D9D300E26A3C /* GameScene.swift in Sources */,
 				A1CD39AC2491D9D300E26A3C /* GameViewController.swift in Sources */,
+				A104AE662496CC6D00B0A0FC /* Message.swift in Sources */,
 				A19C89FE2495D1C700C23F3A /* GameplayVC.swift in Sources */,
 				A19C8A042495D1F900C23F3A /* GameResultVC.swift in Sources */,
 				A1CD39A42491D9D300E26A3C /* AppDelegate.swift in Sources */,
 				A19C8A002495D1D400C23F3A /* AnswerResultVC.swift in Sources */,
+				A104AE6B2496CC8E00B0A0FC /* DataManager.swift in Sources */,
+				A104AE682496CC7400B0A0FC /* Player.swift in Sources */,
+				A104AE642496CC6900B0A0FC /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

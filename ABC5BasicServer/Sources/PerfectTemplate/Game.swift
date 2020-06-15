@@ -7,7 +7,6 @@
 
 import Foundation
 import PerfectWebSockets
-import TicTacToeShared
 
 enum GameError: Error {
     case failedToSerializeMessageToJsonString(message: Message)
@@ -18,13 +17,18 @@ class Game {
     
     private var playerSocketInfo: [Player: WebSocket] = [:]
     private var activePlayer: Player?
-    private var board = [Tile](repeating: Tile.none, count: 9)
+    private var answer:[String] = []
     
     private var players: [Player] {
         return Array(self.playerSocketInfo.keys)
     }
         
     private init() {}
+    
+    func GetAnswerList()->[String]
+    {
+        
+    }
     
     func playerForSocket(_ aSocket: WebSocket) -> Player? {
         var aPlayer: Player? = nil
@@ -59,8 +63,8 @@ class Game {
         }
     }
     
-    func handleTurn(_ board: [Tile]) throws {
-        self.board = board
+    func handleTurn(_ answer: String) throws {
+        self.answer = board
 
         if didPlayerWin() {
             let message = Message.finish(board: self.board, winningPlayer: self.activePlayer!)
