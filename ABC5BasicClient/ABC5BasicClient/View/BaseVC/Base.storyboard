@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k7G-Uc-rsn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="o72-Ps-h49">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="k7G-Uc-rsn" customClass="HomePageViewController" customModule="ABC5BasicClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p0A-wL-CQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7F-5L-6Du">
+                                <rect key="frame" x="53" y="567" width="308" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayButton:" destination="k7G-Uc-rsn" eventType="touchUpInside" id="QDg-Gs-jq8"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbC-QG-pGS">
+                                <rect key="frame" x="0.0" y="749" width="414" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="334-F4-zj9">
+                                <rect key="frame" x="259" y="713" width="102" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="gamecontroller.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="GameConfig:" destination="k7G-Uc-rsn" eventType="touchUpInside" id="cd1-84-Gmf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsD-dI-EKd">
+                                <rect key="frame" x="327" y="86" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="music.note" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="MusicButton:" destination="k7G-Uc-rsn" eventType="touchUpInside" id="hEk-hH-JUP"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPA-Yx-yFw">
+                                <rect key="frame" x="324" y="766" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.62745098040000002" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpe-KE-sHU">
+                                <rect key="frame" x="53" y="713" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="bolt.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="AbilityButton:" destination="k7G-Uc-rsn" eventType="touchUpInside" id="K9f-M2-pDI"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-Q9-hYt">
+                                <rect key="frame" x="310" y="73" width="84" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="nosign" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="MusicButton:" destination="k7G-Uc-rsn" eventType="touchUpInside" id="Uiw-GR-MKR"/>
+                                    <action selector="NoMusicButton:" destination="k7G-Uc-rsn" eventType="touchUpInside" id="hxX-8C-oox"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Jf-I5-gY1">
+                                <rect key="frame" x="50" y="144" width="344" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pb6-N2-iEc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="36C-7p-Bqk"/>
+                    <connections>
+                        <outlet property="Ability" destination="Dpe-KE-sHU" id="dwd-aN-kda"/>
+                        <outlet property="GameConfig" destination="334-F4-zj9" id="U06-sp-LE4"/>
+                        <outlet property="Music" destination="UsD-dI-EKd" id="f6I-jK-gei"/>
+                        <outlet property="NoSoundButton" destination="gyg-Q9-hYt" id="W68-SZ-cBa"/>
+                        <segue destination="Cve-Sd-eiA" kind="presentation" identifier="showGameMode" modalPresentationStyle="fullScreen" id="vDm-fK-OP6"/>
+                        <segue destination="DwA-h0-zlj" kind="showDetail" identifier="showGameplay" id="QDP-kB-dYH"/>
+                        <segue destination="d2a-vP-jsl" kind="presentation" identifier="setting" id="PHN-FO-B8R"/>
+                        <segue destination="sAs-NO-Yi1" kind="presentation" identifier="showAbility" id="KSg-G6-ySV"/>
+                        <segue destination="dhn-eT-Iep" kind="presentation" identifier="showGameSetting" modalPresentationStyle="fullScreen" id="Jz7-Vh-4ef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJO-YX-Gcf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.75362318840581" y="836.38392857142856"/>
+        </scene>
+        <!--Ability-->
+        <scene sceneID="qd5-Pc-XUO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Ability" storyboardName="AbilityView" referencedIdentifier="Ability" id="sAs-NO-Yi1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyh-BT-QHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="774"/>
+        </scene>
+        <!--GameMode-->
+        <scene sceneID="re6-ig-4uz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GameMode" id="Cve-Sd-eiA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Rol-Os-63l"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PaI-eq-fDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="676"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="lSI-jA-YHb">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Setting" storyboardName="SettingVC" referencedIdentifier="Setting" id="d2a-vP-jsl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXE-KH-zx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="1142"/>
+        </scene>
+        <!--GameSet-->
+        <scene sceneID="WTw-OV-QQR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="GameSet" storyboardName="GameSettingVC" referencedIdentifier="GameSet" id="dhn-eT-Iep" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLM-0h-c9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="474.77678571428567"/>
+        </scene>
+        <!--Gameplay-->
+        <scene sceneID="bmP-0V-sPS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Gameplay" id="DwA-h0-zlj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufd-bD-MQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="913"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="250.5" height="192"/>
+        <image name="bolt.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
+        <image name="nosign" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

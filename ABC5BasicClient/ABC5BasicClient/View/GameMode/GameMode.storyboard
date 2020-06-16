@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ffs-0l-cMp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Mode-->
+        <scene sceneID="Ccf-NZ-Hi3">
+            <objects>
+                <viewController id="Ffs-0l-cMp" customClass="GameMode" customModule="ABC5BasicClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mlx-wf-Xwm" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsy-wu-E0I">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-W4-zSM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlS-VR-LhJ">
+                                <rect key="frame" x="72" y="292" width="270" height="120"/>
+                                <state key="normal" title="SingleDevice" image="single device"/>
+                                <connections>
+                                    <action selector="singleDevice:" destination="Ffs-0l-cMp" eventType="touchUpInside" id="yLl-7l-5Lk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eha-Yc-0Ep">
+                                <rect key="frame" x="72" y="484" width="270" height="120"/>
+                                <state key="normal" title="Multi device" image="multi device"/>
+                                <connections>
+                                    <action selector="multiDevice:" destination="Ffs-0l-cMp" eventType="touchUpInside" id="fvg-Wo-b8a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zps-Z8-ilX">
+                                <rect key="frame" x="20" y="65" width="65" height="40"/>
+                                <state key="normal" title="back" image="back arrow"/>
+                                <connections>
+                                    <segue destination="GYi-An-t4U" kind="unwind" unwindAction="unwindToHome:" id="PhE-dk-ce2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vlS-VR-LhJ" firstAttribute="leading" secondItem="SRO-4O-iSW" secondAttribute="leading" constant="72" id="7bN-Qo-68W"/>
+                            <constraint firstItem="eha-Yc-0Ep" firstAttribute="top" secondItem="vlS-VR-LhJ" secondAttribute="bottom" constant="72" id="CvX-fD-r26"/>
+                            <constraint firstItem="vlS-VR-LhJ" firstAttribute="centerX" secondItem="mlx-wf-Xwm" secondAttribute="centerX" id="GJg-Gl-WMT"/>
+                            <constraint firstItem="vlS-VR-LhJ" firstAttribute="trailing" secondItem="eha-Yc-0Ep" secondAttribute="trailing" id="MXl-53-zRG"/>
+                            <constraint firstItem="vlS-VR-LhJ" firstAttribute="top" secondItem="mlx-wf-Xwm" secondAttribute="top" constant="292" id="PAx-zS-fbu"/>
+                            <constraint firstItem="vlS-VR-LhJ" firstAttribute="leading" secondItem="eha-Yc-0Ep" secondAttribute="leading" id="Vy3-mV-0t1"/>
+                            <constraint firstItem="Zps-Z8-ilX" firstAttribute="top" secondItem="SRO-4O-iSW" secondAttribute="top" constant="14" id="o9T-T7-wM1"/>
+                            <constraint firstItem="Zps-Z8-ilX" firstAttribute="leading" secondItem="mlx-wf-Xwm" secondAttribute="leadingMargin" id="ouI-2R-V6H"/>
+                            <constraint firstItem="SRO-4O-iSW" firstAttribute="trailing" secondItem="Zps-Z8-ilX" secondAttribute="trailing" constant="329" id="qzh-GB-Kz7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SRO-4O-iSW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bYc-kQ-zEc"/>
+                    <connections>
+                        <segue destination="xoF-zJ-HYQ" kind="presentation" identifier="showGameplay" modalPresentationStyle="fullScreen" id="DeV-0K-DO9"/>
+                        <segue destination="jxA-z5-GgY" kind="presentation" identifier="showJoin" modalPresentationStyle="fullScreen" id="zKG-dy-RUx"/>
+                        <segue destination="wdI-gt-UIN" kind="presentation" identifier="showHost" modalPresentationStyle="fullScreen" id="o6x-Jy-CVB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdd-FE-Qho" sceneMemberID="firstResponder"/>
+                <exit id="GYi-An-t4U" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1337.68115942029" y="137.94642857142856"/>
+        </scene>
+        <!--HostViewController-->
+        <scene sceneID="yFc-nL-DGC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HostViewController" id="wdI-gt-UIN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFR-lj-Xig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2073" y="138"/>
+        </scene>
+        <!--Gameplay-->
+        <scene sceneID="K4h-Vz-KsC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Gameplay" id="xoF-zJ-HYQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ts7-is-Qg2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5V-dr-2ry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="273"/>
+        </scene>
+        <!--JoinGameController-->
+        <scene sceneID="u6A-mn-1hy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="JoinGameController" id="jxA-z5-GgY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qz0-au-l6O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999" y="9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back arrow" width="42" height="40"/>
+        <image name="bg" width="402" height="809"/>
+        <image name="multi device" width="270" height="120"/>
+        <image name="single device" width="270" height="120"/>
+    </resources>
+</document>

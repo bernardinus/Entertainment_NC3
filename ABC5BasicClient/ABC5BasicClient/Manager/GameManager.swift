@@ -22,11 +22,12 @@ class GameManager
     var availableAnswer:[String] = []
     var answeredAnswer:[String] = []
     var scoreData:[String:Int] = [:]
+    var liveData:[String:Int] = [:]
     var playersTurn:[String] = []
         
+    let maxRounds = 3
     var currentPlayer:String = ""
     var currentScore:Int = 0
-    var roundsCount = 0
     var currentRounds = 0
 
     private init()
@@ -45,7 +46,6 @@ class GameManager
     
     func initializeSingleDeviceGame(players:[String])
     {
-        roundsCount = 3
         self.players = players
         
         availableAnswer = getAvailableAnswer()
@@ -56,11 +56,11 @@ class GameManager
         {
             let player = players[i]
             scoreData[player] = 0
+            liveData[player] = 3
         }
         
         startNewRounds()
-        
-        startGame()
+        nextPlayer()
     }
     
     
@@ -71,7 +71,17 @@ class GameManager
     
     func startNewRounds()
     {
+        currentRounds = 1
         playersTurn = players.shuffled()
+    }
+    
+    func isRoundFinish() -> Bool
+    {
+        if(currentRounds == maxRounds)
+        {
+            return true
+        }
+        return false
     }
     
     func nextPlayer()

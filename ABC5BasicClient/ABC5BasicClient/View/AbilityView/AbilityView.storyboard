@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ability View Controller-->
+        <scene sceneID="goF-Zg-8ZN">
+            <objects>
+                <viewController storyboardIdentifier="Ability" id="Wyh-Xo-goa" customClass="AbilityViewController" customModule="ABC5BasicClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pig-m6-oiA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grh-fy-gCO">
+                                <rect key="frame" x="20" y="89" width="90" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="cer-w4-5sz"/>
+                                    <constraint firstAttribute="height" constant="45" id="ewX-SZ-8GF"/>
+                                </constraints>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NVI-JR-FkF" kind="unwind" unwindAction="unwindToHome:" id="8lT-66-rmU"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vy6-qo-QuL">
+                                <rect key="frame" x="0.0" y="154" width="414" height="708"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="grh-fy-gCO" firstAttribute="top" secondItem="gx0-al-frb" secondAttribute="top" constant="45" id="6cU-7I-i4a"/>
+                            <constraint firstItem="grh-fy-gCO" firstAttribute="leading" secondItem="gx0-al-frb" secondAttribute="leading" constant="20" id="81L-LV-VmP"/>
+                            <constraint firstItem="gx0-al-frb" firstAttribute="trailing" secondItem="vy6-qo-QuL" secondAttribute="trailing" id="CyA-Vp-hI5"/>
+                            <constraint firstItem="gx0-al-frb" firstAttribute="bottom" secondItem="vy6-qo-QuL" secondAttribute="bottom" id="O9q-v5-4Hp"/>
+                            <constraint firstItem="vy6-qo-QuL" firstAttribute="top" secondItem="grh-fy-gCO" secondAttribute="bottom" constant="20" id="k5f-1Q-fIf"/>
+                            <constraint firstItem="vy6-qo-QuL" firstAttribute="leading" secondItem="gx0-al-frb" secondAttribute="leading" id="mLf-Vm-Rcg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gx0-al-frb"/>
+                    </view>
+                    <connections>
+                        <outlet property="abilityTable" destination="vy6-qo-QuL" id="sPM-BC-bsF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJ9-P4-McU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NVI-JR-FkF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="1855.5803571428571"/>
+        </scene>
+    </scenes>
+</document>
