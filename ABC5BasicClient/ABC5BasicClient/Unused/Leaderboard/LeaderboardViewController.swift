@@ -10,10 +10,14 @@ import UIKit
 
 class LeaderboardViewController: UIViewController {
 
+    @IBOutlet var tableview: UITableView!
+    let name = ["aldo", "dimas", "nermamrd"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let nib = UINib(nibName: "LeaderboardTableViewCell", bundle: nil)
+        tableview.register(nib, forCellReuseIdentifier: "LeaderboardTableViewCell")
+        tableview.delegate = self
+        tableview.dataSource = self
     }
     
 
@@ -27,4 +31,17 @@ class LeaderboardViewController: UIViewController {
     }
     */
 
+}
+
+extension LeaderboardViewController: UITableViewDelegate,UITableViewDataSource
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return name.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LeaderboardTableViewCell", for: indexPath) as! LeaderboardTableViewCell
+        cell.nametext?.text = name[indexPath.row]
+        return cell
+    }
 }

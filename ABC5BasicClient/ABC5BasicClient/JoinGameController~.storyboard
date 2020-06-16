@@ -119,35 +119,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boy1" translatesAutoresizingMaskIntoConstraints="NO" id="jN7-5O-SBX">
-                                <rect key="frame" x="30" y="389" width="85" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boy2" translatesAutoresizingMaskIntoConstraints="NO" id="wDD-no-JKe">
-                                <rect key="frame" x="120" y="389" width="85" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boy3" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-qy-2JX">
-                                <rect key="frame" x="210" y="389" width="85" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boy4" translatesAutoresizingMaskIntoConstraints="NO" id="fI3-VR-Dxc">
-                                <rect key="frame" x="300" y="389" width="85" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl2" translatesAutoresizingMaskIntoConstraints="NO" id="c8Z-Ig-Lz5">
-                                <rect key="frame" x="120" y="477" width="85" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl3" translatesAutoresizingMaskIntoConstraints="NO" id="x4w-W5-QxY">
-                                <rect key="frame" x="210" y="477" width="85" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl4" translatesAutoresizingMaskIntoConstraints="NO" id="ToT-hT-axg">
-                                <rect key="frame" x="300" y="477" width="85" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl1" translatesAutoresizingMaskIntoConstraints="NO" id="S4z-0d-YHy">
-                                <rect key="frame" x="30" y="477" width="85" height="80"/>
+                                <rect key="frame" x="165" y="399" width="85" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -155,6 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="k3y-7s-U1I"/>
                     </view>
                     <connections>
+                        <outlet property="avatarPic" destination="jN7-5O-SBX" id="yzr-kA-Z93"/>
                         <outlet property="roomID" destination="7uv-jY-czo" id="2Uo-eT-Fu7"/>
                     </connections>
                 </viewController>
@@ -237,7 +210,7 @@
                                 <rect key="frame" x="92" y="282" width="231" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -286,10 +259,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="viJ-bQ-X8I">
+                                <rect key="frame" x="28" y="212" width="348" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wgJ-w6-n8y"/>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="viJ-bQ-X8I" id="Mqh-2r-AcZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVa-Pw-mZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

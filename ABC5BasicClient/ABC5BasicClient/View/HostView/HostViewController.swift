@@ -9,27 +9,21 @@
 import UIKit
 
 class HostViewController: UIViewController {
-
-    @IBOutlet weak var profileImages: UICollectionView!
     
     @IBOutlet weak var roomID: UILabel!
+    @IBOutlet weak var avatarPic: UIImageView!
     
-    func random() -> String {
-        var result = ""
-        repeat {
-            result = String(format:"%04d", arc4random_uniform(10000) )
-        } while result.count < 4 || Int(result)! < 1000
-        print(result)
-        return result
-    }
+    var avatarPicArray: [UIImage] = [#imageLiteral(resourceName: "boy1"),#imageLiteral(resourceName: "girl3"),#imageLiteral(resourceName: "girl4"),#imageLiteral(resourceName: "girl1"),#imageLiteral(resourceName: "boy3"),#imageLiteral(resourceName: "boy2"),#imageLiteral(resourceName: "boy4"),#imageLiteral(resourceName: "girl2")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    //roomID = random()
+    
 
     
     }
+    
+    
     
 
     /*

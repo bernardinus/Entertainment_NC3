@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JoinGameViewController: UIViewController{
+class JoinGameViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var roomidField: UITextField!
     
@@ -26,21 +26,29 @@ class JoinGameViewController: UIViewController{
     
     override func viewDidLoad() {
         
-        
-        
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-
-            view.addGestureRecognizer(tap)
-        }
-
-        //Calls this function when the tap is recognized.
-        @objc func dismissKeyboard() {
-            //Causes the view (or one of its embedded text fields) to resign the first responder status.
-            view.endEditing(true)
-        
         super.viewDidLoad()
         
-            
+        roomidField.delegate = self
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+        
+//        func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//            let currentText = textField.text ?? ""
+//            guard let stringRange = Range(range, in:currentText) else {
+//                return false
+//            }
+//            
+//            let updateText = currentText.replacingCharacters(in: stringRange, with: string)
+//            return updateText.count < 4
+//        }
         
         
         
@@ -72,7 +80,7 @@ class JoinGameViewController: UIViewController{
         // Do any additional setup after loading the view.
     }
     
- 
+    
     
     
     
@@ -152,14 +160,6 @@ class JoinGameViewController: UIViewController{
             avatar8.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         }
         
-        
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         
     }
     
